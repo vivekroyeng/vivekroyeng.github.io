@@ -191,7 +191,7 @@ def generate_index_html(essays):
             </div>
             <div class="output">
                 Thoughts and Musings by Vivek Roy<br/>
-                notes on engineering, management, systems, products, and *.*
+                notes on engineering, management, systems, products, and *.*<span class="cursor"></span>
             </div>
             <div class="command-line mt-4">
                 <span class="prompt">vivekroyeng@github:~$</span>

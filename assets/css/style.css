@@ -64,6 +64,21 @@ body {
 .output { margin-bottom: 16px; color: #abb2bf; }
 .mt-4 { margin-top: 24px; }
 
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background-color: #98c379;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
 .file-line {
     margin: 4px 0;
     display: flex;
