@@ -1,6 +1,6 @@
 # vivekroyeng.github.io
 
-Personal website featuring essays on systems, products, and intelligence.
+Personal website featuring thoughts on systems, products, and intelligence.
 
 ## Quick Start
 ```bash
@@ -14,7 +14,7 @@ python -m http.server 8000
 ├── assets/
 │   ├── css/style.css      # Styles
 │   └── js/main.js         # Scripts
-└── essays/                # Essay pages
+└── thoughts/              # Thought pages
 ```
 
 ## Deploy to GitHub Pages
