@@ -42,6 +42,7 @@ ESSAYS = [
 
 def simple_markdown_to_html(markdown_text):
     """Simple markdown to HTML converter (fallback)."""
+    # Note: First H1 is already removed by markdown_to_html() before calling this
     html = markdown_text
     
     # Headers
@@ -95,6 +96,22 @@ def simple_markdown_to_html(markdown_text):
 
 def markdown_to_html(markdown_text):
     """Convert markdown to HTML."""
+    # Remove the first H1 heading if it exists (we add title from metadata)
+    # This prevents duplicate titles
+    lines = markdown_text.split('\n')
+    filtered_lines = []
+    first_h1_removed = False
+    
+    for line in lines:
+        stripped = line.strip()
+        # Skip the first H1 heading (starts with # followed by space)
+        if not first_h1_removed and stripped.startswith('# '):
+            first_h1_removed = True
+            continue
+        filtered_lines.append(line)
+    
+    markdown_text = '\n'.join(filtered_lines)
+    
     if HAS_MARKDOWN:
         md = markdown.Markdown(extensions=['extra', 'codehilite'])
         return md.convert(markdown_text)

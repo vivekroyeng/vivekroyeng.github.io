@@ -1,4 +1,4 @@
-# Egineering Productivity : What makes sense to measure in GenAI Era
+# Engineering Productivity: What Makes Sense to Measure in GenAI Era
 
 ## Initiative Tenets
 These principles guide our approach to defining and measuring engineering productivity:
