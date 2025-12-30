@@ -3,13 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivek Roy - Notepad </title>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Essays by Vivek Roy - Notes on systems, products, and intelligence">
+    <title>Vivek Roy - Essays</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <p>hi</p>
+    <div class="terminal-window">
+        <div class="window-header">
+            <div class="window-buttons">
+                <span class="window-button button-close"></span>
+                <span class="window-button button-minimize"></span>
+                <span class="window-button button-maximize"></span>
+            </div>
+            <div class="window-title">vivekroyeng@github: ~/</div>
+        </div>
+        <div class="terminal-content">
+            <div class="command-line">
+                <span class="prompt">vivekroyeng@github:~$</span>
+                <span class="command"> whoami 👋</span>
+            </div>
+            <div class="output">
+                Essays by Vivek Roy<br/>
+                notes on systems, products, and intelligence
+            </div>
+            <div class="command-line mt-4">
+                <span class="prompt">vivekroyeng@github:~$</span>
+                <span class="command"> cd essays</span>
+            </div>
+            <div class="command-line">
+                <span class="prompt">vivekroyeng@github:~/essays$</span>
+                <span class="command"> ls</span>
+            </div>
+            <div class="output">
+                <div class="file-line">
+                    <span class="file-number">01. </span>
+                    <a href="essays/the-manager-and-the-machine.html" class="file-link">The Manager and The Machine</a>
+                </div>
+                <div class="file-line">
+                    <span class="file-number">02. </span>
+                    <a href="essays/refinement-in-place.html" class="file-link">Refinement in Place</a>
+                </div>
+                <div class="file-line">
+                    <span class="file-number">03. </span>
+                    <a href="essays/proof-over-persuasion.html" class="file-link">Proof over Persuasion</a>
+                </div>
+                <div class="file-line">
+                    <span class="file-number">04. </span>
+                    <a href="essays/code-highest-resolution.html" class="file-link">Code Is the Highest-Resolution Expression of Intelligence</a>
+                </div>
+                <div class="file-line">
+                    <span class="file-number">05. </span>
+                    <a href="essays/work-charts-not-org-charts.html" class="file-link">Work Charts, Not Org Charts</a>
+                </div>
+                <div class="file-line">
+                    <span class="file-number">06. </span>
+                    <a href="essays/reflection-as-training-signal.html" class="file-link">Reflection as a Training Signal</a>
+                </div>
+            </div>
+            <div class="command-line mt-4">
+                <span class="prompt">vivekroyeng@github:~/essays$</span>
+                <span class="command"> cat README</span>
+            </div>
+            <div class="output">
+                lived notes from making tools that other makers use<br/>
+                some essays study the technical<br/>
+                others explore the craft of building<br/>
+                all are written from practice
+            </div>
+            <div class="command-line mt-4">
+                <span class="prompt">vivekroyeng@github:~/links$</span>
+                <span class="command"> open .</span>
+            </div>
+            <div class="output">
+                <div class="link-line">
+                    <span class="link-icon">↳ </span>
+                    <a href="https://github.com/vivekroyeng" target="_blank" class="external-link">github</a>
+                    <span class="link-desc"> code</span>
+                </div>
+                <div class="link-line">
+                    <span class="link-icon">↳ </span>
+                    <a href="https://linkedin.com/in/vivekroy" target="_blank" class="external-link">linkedin</a>
+                    <span class="link-desc"> connect</span>
+                </div>
+                <div class="link-line">
+                    <span class="link-icon">↳ </span>
+                    <a href="https://x.com/vivekroyeng" target="_blank" class="external-link">x</a>
+                    <span class="link-desc"> posts</span>
+                </div>
+                <div class="link-line">
+                    <span class="link-icon">↳ </span>
+                    <a href="mailto:vivek@example.com" class="external-link">email</a>
+                    <span class="link-desc"> chat</span>
+                </div>
+            </div>
+            <div class="copyright">© 2025 Vivek Roy</div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

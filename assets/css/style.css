@@ -1,0 +1,145 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+    background: #0d1117;
+    color: #d4d4d4;
+    padding: 2rem;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.terminal-window {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.window-header {
+    background: #323232;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.window-buttons { display: flex; gap: 8px; }
+
+.window-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.button-close { background: #ff5f57; }
+.button-minimize { background: #ffbd2e; }
+.button-maximize { background: #28c840; }
+
+.window-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #8b8b8b;
+    font-size: 13px;
+}
+
+.terminal-content { padding: 24px; font-size: 14px; }
+
+.command-line {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.prompt { color: #98c379; white-space: nowrap; }
+.command { color: #d4d4d4; }
+.output { margin-bottom: 16px; color: #abb2bf; }
+.mt-4 { margin-top: 24px; }
+
+.file-line {
+    margin: 4px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.file-number {
+    color: #5c6370;
+    margin-right: 8px;
+    min-width: 32px;
+}
+
+.file-link {
+    color: #61afef;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.file-link:hover {
+    text-decoration: underline;
+    color: #89c0f5;
+}
+
+.link-line { margin: 4px 0; }
+.link-icon { color: #5c6370; margin-right: 4px; }
+
+.external-link {
+    color: #61afef;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.external-link:hover {
+    text-decoration: underline;
+    color: #89c0f5;
+}
+
+.link-desc { color: #abb2bf; }
+.copyright { margin-top: 32px; color: #5c6370; font-size: 12px; }
+
+.essay-content {
+    margin: 24px 0;
+    padding: 24px;
+    background: #252525;
+    border-radius: 4px;
+    border-left: 3px solid #61afef;
+}
+
+.essay-content h1 {
+    color: #e06c75;
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.essay-content p {
+    color: #d4d4d4;
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
+
+.back-link {
+    color: #61afef;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 16px;
+    border: 1px solid #61afef;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.back-link:hover {
+    background: #61afef;
+    color: #1e1e1e;
+}
+
+@media (max-width: 768px) {
+    body { padding: 1rem; }
+    .terminal-content { padding: 16px; font-size: 13px; }
+}
