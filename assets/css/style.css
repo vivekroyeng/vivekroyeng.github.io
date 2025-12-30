@@ -102,14 +102,15 @@ body {
 .copyright { margin-top: 32px; color: #5c6370; font-size: 12px; }
 
 .essay-content {
-    margin: 24px 0;
+    margin: 0;
     padding: 0;
 }
 
 .essay-content h1 {
-    color: #d4d4d4;
+    color: #e06c75;
     font-size: 32px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    margin-top: 0;
     font-weight: 600;
     line-height: 1.2;
 }
@@ -117,12 +118,14 @@ body {
 .essay-meta {
     color: #8b8b8b;
     font-size: 14px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+    margin-top: 0;
     font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
 }
 
 .essay-body {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .essay-body p {
