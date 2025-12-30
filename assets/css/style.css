@@ -4,9 +4,11 @@ body {
     font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
     background: #0d1117;
     color: #d4d4d4;
-    padding: 2rem;
+    padding: 1rem 2rem;
     line-height: 1.6;
     min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
 }
 
 .terminal-window {
@@ -16,6 +18,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.5);
     overflow: hidden;
+    margin-top: 0;
 }
 
 .window-header {
