@@ -1,6 +1,10 @@
 # vivekroyeng.github.io
 
-Personal website featuring thoughts on systems, products, and intelligence.
+- My notes from architecting platforms that empower builders and customers
+- some deconstruct technical systems and architecture
+- others examine the craft of product engineering
+- rest on engineering management and leadership
+- all grounded in real-world execution
 
 ## Quick Start
 ```bash

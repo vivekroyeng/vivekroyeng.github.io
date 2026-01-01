@@ -12,23 +12,56 @@ body {
 }
 
 .terminal-window {
-    width: min(700px, 90vw);
-    max-width: 700px;
-    margin: 3.5rem auto 0 auto;
+    width: min(900px, 96vw);
+    max-width: 900px;
+    margin: 1.5rem auto 0 auto;
     background: #fff;
     border-radius: 18px;
-    box-shadow: 0 8px 40px 0 rgba(255, 192, 203, 0.18), 0 1.5px 8px 0 rgba(0,0,0,0.06);
+    box-shadow: 0 8px 32px 0 rgba(232, 139, 178, 0.12), 0 1.5px 16px 0 rgba(0,0,0,0.08);
     overflow: hidden;
     border: none;
+    position: relative;
+}
+
+.terminal-window::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 14px;
+    background: linear-gradient(to bottom, #f7eaf2 80%, #fff 100%);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    z-index: 1;
+}
+
+.terminal-window::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 44px;
+    width: 100%;
+    height: 1.5px;
+    background: linear-gradient(to right, #f7eaf2 10%, #e48bb2 50%, #f7eaf2 90%);
+    z-index: 2;
 }
 
 .window-header {
     background: #fff;
-    padding: 16px 20px 0 20px;
-    display: none;
+    padding: 18px 32px 10px 32px;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-.window-buttons { display: flex; gap: 8px; }
+.window-buttons {
+    display: flex;
+    gap: 8px;
+    margin-right: 12px;
+}
 
 .window-button {
     width: 12px;
@@ -42,16 +75,19 @@ body {
 .button-maximize { background: #28c840; }
 
 .window-title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    left: auto;
+    transform: none;
     color: #8b8b8b;
-    font-size: 13px;
+    font-size: 16px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
+    font-weight: 600;
 }
 
 .terminal-content {
-    padding: 38px 38px 24px 38px;
-    font-size: 15px;
+    padding: 32px 32px 24px 32px;
+    font-size: 16px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
 }
 
 .command-line {
@@ -62,6 +98,8 @@ body {
 }
 
 .prompt {
+    font-size: 16px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
     color: #e48bb2;
     white-space: nowrap;
 }
@@ -79,10 +117,11 @@ body {
 
 .cursor {
     display: inline-block;
-    width: 8px;
-    height: 16px;
-    background-color: #98c379;
+    width: 7px;
+    height: 18px;
+    background-color: #e48bb2;
     margin-left: 2px;
+    border-radius: 3px;
     animation: blink 1s infinite;
     vertical-align: middle;
 }
@@ -128,11 +167,14 @@ body {
 }
 
 .link-desc { color: #abb2bf; }
+
 .copyright {
     margin-top: 32px;
     color: #bdbdbd;
     font-size: 12px;
     letter-spacing: 0.01em;
+    position: relative;
+    z-index: 3;
 }
 
 .essay-content {
@@ -142,11 +184,12 @@ body {
 
 .essay-content h1 {
     color: #e48bb2;
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 8px;
     margin-top: 0;
     font-weight: 600;
     line-height: 1.2;
+    font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
 }
 
 .essay-meta {
@@ -166,7 +209,8 @@ body {
     color: #2d2d2d;
     margin-bottom: 20px;
     line-height: 1.8;
-    font-size: 15px;
+    font-size: 16px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
 }
 
 .essay-body p:last-child {
@@ -206,6 +250,7 @@ body {
     margin-bottom: 8px;
     line-height: 1.6;
     font-size: 16px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
 }
 
 .essay-body blockquote {
@@ -224,9 +269,13 @@ body {
     align-items: center;
     gap: 4px;
     padding: 8px 16px;
-    border: 1px solid #7b5fe0;
-    border-radius: 4px;
+    border: 1.5px solid #7b5fe0;
+    border-radius: 8px;
     transition: all 0.2s;
+    background: #fff;
+    margin-top: 56px;
+    position: relative;
+    z-index: 5;
 }
 
 .back-link:hover {
@@ -238,4 +287,6 @@ body {
     body { padding: 0.5rem; }
     .terminal-window { width: 98vw; max-width: 98vw; margin: 1.5rem auto 0 auto; }
     .terminal-content { padding: 12px; font-size: 13px; }
+    .terminal-window::before { height: 10px; }
+    .terminal-window::after { bottom: 38px; }
 }

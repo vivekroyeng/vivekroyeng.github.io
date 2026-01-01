@@ -208,7 +208,7 @@ def generate_index_html(essays):
             </div>
             <div class="output">
                 Thoughts and Musings by Vivek Roy<br/>
-                notes on engineering, management, systems, products, and *.*<span class="cursor"></span>
+                <i>notes on engineering, management, systems, products, and *.*</i>
             </div>
             <div class="command-line mt-4">
                 <span class="prompt">vivekroyeng@github:~$</span>
@@ -222,10 +222,10 @@ def generate_index_html(essays):
 {essay_links}           </div>
             <div class="command-line mt-4">
                 <span class="prompt">vivekroyeng@github:~/thoughts$</span>
-                <span class="command"> cat README</span>
+                <span class="command"> cat README.md</span>
             </div>
             <div class="output">
-                My notes from architecting platforms that empower builders and customers<br/>
+                Notes from architecting platforms that empower builders and customers<br/>
                 some thoughts deconstruct technical systems and architecture<br/>
                 others examine the craft of product engineering<br/>
                 rest on engineering management and leadership<br/>
@@ -233,7 +233,7 @@ def generate_index_html(essays):
             </div>
             <div class="command-line mt-4">
                 <span class="prompt">vivekroyeng@github:~/links$</span>
-                <span class="command"> open .</span>
+                <span class="command"> cat contact.md </span> <span class="cursor"></span>
             </div>
             <div class="output">
                 <div class="link-line">
